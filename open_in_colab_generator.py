@@ -2,6 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 st.title("Open in Colab Generator")
+st.container(overflow='hidden')
 
 link = st.text_input('Github link: ','')
 link = link.replace("https:/","") # Removing https:/
